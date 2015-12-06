@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/select_upload_image"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload_photo_default" />
+
+    <EditText
+        android:id="@+id/post_ask_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_upload_image"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dp"
+        android:hint="Name your upload" />
+
+    <Button
+        android:id="@+id/post_ask_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="UPLOAD" />
+
+    <EditText
+        android:id="@+id/post_ask_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/post_ask_submit"
+        android:layout_below="@id/post_ask_category"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:hint="Description"
+        android:lines="5"
+        android:singleLine="false" />
+
+</RelativeLayout>

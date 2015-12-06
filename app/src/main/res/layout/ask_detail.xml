@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ask_user_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:layout_margin="3dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/folks_urer_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/folks_user_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:text="5 km"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/folks_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/folks_user_distance"
+            android:layout_toRightOf="@id/folks_urer_img"
+            android:text="John Deo"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/folks_user_ratings_image"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/folks_user_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/folks_urer_img"
+            android:numStars="5" />
+
+
+        <TextView
+            android:id="@+id/folks_user_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/folks_user_ratings_image"
+            android:layout_toRightOf="@id/folks_urer_img"
+            android:layout_marginTop="5dp"
+            android:text="7 Asks"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/folks_user_responses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/folks_user_ratings_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/folks_user_ask"
+            android:text="9 Responses"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/folks_user_following_type"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_follow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ask_detail_child"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ask_user_detail"
+        android:background="#eee"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ask_detail_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="The text area looks fine, but the problem is that the cursor is blinking"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/loggedin_user_other_detail_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ask_detail_header"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_launcher" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/flag"
+                android:src="@drawable/ic_launcher" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/responses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tick"
+                android:text="3 Responses" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/follows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/responses"
+                android:text="8 Follow" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/posted_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Posted On : asdfdf" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loggedin_user_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loggedin_user_other_detail_layout" >
+
+            <ImageView
+                android:id="@+id/loggedin_user_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_launcher" />
+
+            <EditText
+                android:id="@+id/response_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/loggedin_user_img"
+                android:hint="Type your response" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/other_user_ask"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/loggedin_user_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

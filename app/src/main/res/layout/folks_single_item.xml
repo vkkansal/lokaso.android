@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="#fff"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/folks_urer_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/folks_user_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:text="5 km"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/folks_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/folks_user_distance"
+            android:layout_toRightOf="@id/folks_urer_img"
+            android:text="John Deo"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/folks_user_ratings_image"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/folks_user_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/folks_urer_img"
+            android:numStars="5" />
+
+
+        <TextView
+            android:id="@+id/folks_user_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/folks_user_ratings_image"
+            android:layout_toRightOf="@id/folks_urer_img"
+            android:layout_marginTop="5dp"
+            android:text="7 Asks"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/folks_user_responses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/folks_user_ratings_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/folks_user_ask"
+            android:text="9 Responses"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/folks_user_following_type"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_follow" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

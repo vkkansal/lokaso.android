@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/whatareyouinterestedin"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="21dp"
+        android:textColor="#494949"
+        android:hint="What are you interested in ?"
+        />
+    <TextView
+        android:id="@+id/pickwhatever"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#525252"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp"
+        android:hint="Pick whatever catches your eyes ... you can always fine-tune things later"
+        />
+
+    <GridView
+        android:id="@+id/listinterest"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:background="#f0f0f0"
+        android:stretchMode="columnWidth"
+        android:numColumns="2" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/submitbtn"
+        android:layout_gravity="center_horizontal"
+
+        android:textColor="@color/white"
+        android:background="@drawable/button_blue"
+        android:textStyle="bold"/>
+</LinearLayout>

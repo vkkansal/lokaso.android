@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/answerAuthor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/profile_photo"
+        android:minHeight="16dp"
+        android:minWidth="16dp"
+        android:src="@drawable/profile_default_photo" />
+
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/answerAuthor"
+        android:singleLine="false"
+        android:text="Search User Fullname"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionText"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/answerAuthor"
+        android:singleLine="true"
+        android:text="New Text"
+        android:textColor="@color/light_blue"
+
+        android:textSize="13dp" />
+
+
+    <!-- Person Full name -->
+
+    <!-- Status -->
+
+</RelativeLayout>
