@@ -2,256 +2,256 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="1821601ddbec5ff125653097812823388700af74">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-51d2e6c26a12d7ab6a5166a2058bf2bb81dc6257.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="d405025c600055237c171a0bbabaa49d69696573">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-34d4ff67f8a68aedb6842f8ded1bb7d90c202014.jar" />
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-f40628336664b60b85cacdb39db3a27cc358d6e1.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-9964c74dc727350293cb7ee384ce1e5b1bbe2b80.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-72e82418a73fb8e737e4d36eb39d1c7e9ddebc6e.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-271375c9f5f4b85a141f371c1bfcaf4c06c839d5.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-fe6c960fa98b4c68b740a9c820adbebfe88b6b8e.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-80508ff2560e714150f63c2df1a42586182fcb53.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-99e58c0f4deec5f88eeff1b2a2068628c713251a.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\libs\universal-image-loader-1.9.4.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\universal-image-loader-1.9.4-6c1249c55facf5bc4f46dc235bedc1e59cebdc2e.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\libs\volley.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\volley-a25da8cfc790e1a6aca790d76b7b750d415125e4.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-11d5290c9aab7449af8ba0d125547ee44758ca08.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="f7188fc9a524a8f965b5aeab74879036f0431080">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-88781daa3fc9bacc6724933a89629857cf01ff72.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-799e05e63f624fe534bd65dce6e093cdea657d12.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-736fab0db266c6ed6827a8b165ae2f1a59bfafcc.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.github.chrisbanes.photoview\library\1.2.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="81aa0e8e77d948204aa6754019c6f3c04dd922e3">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-5e19413b94126b23799bbac82e85dbba86c84b8f.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-0e86720cb4dc7c501306adced1a47234588f16a2.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-56d6a2be4404edd3295f2a4f0ef96fd831598631.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-1aefe7d1f6b5b7b534f0f4bbff5f6fe50e1f0dc8.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-4564a1e4c2d23b3db8a6855f389beca8fac2f973.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-5c37d72c76c51d97124f1983ffe5417c93a63c0e.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-4a1dbccc4f78aaa0b4fb6312f96acfe287d110ba.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-80da69913c7835d9ea14f3401511bd60044b1aa6.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-c2e1ab4b8279a0a2577ce38f6a31aceb8a355156.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-d2ae2421f7006cae082a13943a2607b96ba8de2d.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-74d94edc62c45b6d4dacb5f23badbae4f5962e0e.jar" />
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-49dc74e1c4cd101e60d5ab2663fbf5c67583fef0.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
-        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-251d2a7568da917e1f276bc6bda9cae3efc5dd8e.jar" />
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-aa5e3317d10dcb281856c62d1b564e833744b6f0.jar" />
     </item>
     <item
-        jar="D:\Dev\android\androidSDK\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1-038910dfe24fe3fe9d85c1bf888ce15285fb1f68.jar" />
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-23c0f10210ffd72322610af66a8de7a6596817ef.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.3.6\cf8bacbf0d476c7f2221f861269365b66447f7ec\httpmime-4.3.6.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="cf8bacbf0d476c7f2221f861269365b66447f7ec">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\httpmime-4.3.6-70dcaeb8880f65e19e2e9830b8eccc4d011f865f.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-4c7cee1260761d0c0340ee00eabe48c3f44272ba.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jar="C:\Users\Admin\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\bolts-android-1.1.4-0a5e82629e5b1c2a3eb29e234e46887903e85d86.jar" />
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-b4a16b7250e2b66b927545e2c142b08cca4ff71e.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.1\jars\classes.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
-        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-bbe4c07a41c819bd309b3382d7659e8c18d02902.jar" />
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-1e4401c44a16aec6b1cd4326bb005b64f2986cc7.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.5\82edcaec6c7b4599eaeaaf11167ceea41db42f33\httpclient-android-4.3.5.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
-        sha1="82edcaec6c7b4599eaeaaf11167ceea41db42f33">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\httpclient-android-4.3.5-9e3cc15c98d2ff3ecbab0ce20d10ebddbc6d0d9b.jar" />
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-db48014d8c3b38939189175b738189c04f8ad6d1.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-be09ebd007d8b4e9d8a89c70d69e5c0b40ea6342.jar" />
-    </item>
-    <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-c6d12b93ed0d2b6d0d8468f2edf7a391b169a183.jar" />
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-d45d952b0200861b39e8cbcb622627e1f59e73ba.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\internal_impl-22.0.0-5f26af5c18428e1ba6d769ce4ccb56e4355a594b.jar" />
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-c496b71f187ef82cf228c52eebb1c6331d061ea9.jar" />
     </item>
     <item
-        jar="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-1b840a09a6e524b57aea269c2acd7cbd0d72ada5.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\libs\volley.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\volley-b053c6c7621d2b5985c39469c9da2240f01d90bd.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\libs\universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.4-26ad38df3f1d4cff32859fdf5cde03b5bf1dc810.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-6281a8030031ca2afa9468850cf16069c2927ffa.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-9cacd8bd007f65a94e9a1cf6a428972f38887f8e.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="f7188fc9a524a8f965b5aeab74879036f0431080">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-d4ed0d539926f02601ae35c5a19228ae4c3336c9.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-88f17a09f6d3f13e21215b11a72a86738e590d7c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-0bc3c628a01f6d0f77d5eef84492e64c81f8c932.jar" />
+    </item>
+    <item
+        jar="C:\Users\Admin\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.5\82edcaec6c7b4599eaeaaf11167ceea41db42f33\httpclient-android-4.3.5.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="82edcaec6c7b4599eaeaaf11167ceea41db42f33">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\httpclient-android-4.3.5-a2f77f2818140900f815189c3a6ec13f1bc1d509.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-fc5b04b163b758acb528a29501d35513332a1eea.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-8769fe905b65963b00736c0f844ee21ad60b3ec2.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-0d9e0f9f8916e4d28aa7d129a3c158bfa4752880.jar" />
+    </item>
+    <item
+        jar="C:\Users\Admin\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.3.6\cf8bacbf0d476c7f2221f861269365b66447f7ec\httpmime-4.3.6.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="cf8bacbf0d476c7f2221f861269365b66447f7ec">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\httpmime-4.3.6-83f4d96e577ec221d7004684f6cf5cfce8a3b39e.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-c3a3e0b90a0317f179c47ab6e41d2f491dd08f75.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-7df61eb48c1047304842c606c1146cced5c119f3.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.github.chrisbanes.photoview\library\1.2.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="81aa0e8e77d948204aa6754019c6f3c04dd922e3">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-2f5ef04bf66efaf7a5d72030c1c81e95f047d2db.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-cd479874d34df4ed53850812ad4f4499c76c8759.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
-        <dex dex="C:\Users\appslapho\Downloads\QA Script\QA Script\app\build\intermediates\pre-dexed\release\classes-35bab0aa66e86357acd23fa548ca02833be1b067.jar" />
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-42d50f1d7dddddc577db906cca83958c3f9dc3aa.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-2d1b9c2c7cf9379302b628f7afe9b7d9e24a233c.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-c708954dab61c2f3c884e84bf0f839a69ffaf75b.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-44c0bddf83763b31b2e0bb46ba50c006f862f934.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-2ea5f11427e947990b4a218cff84d39e7781f9c3.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-bdcd42fe91f1eef798259ca63fc78980e19cbc1b.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-f272e642e8935d2536c92e3f595e7605094149b3.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-6eeba71eab5667039c45f3460fca7cbf3bd8d60c.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-d7846d60a6f40920eb32d79985a0b2387f087bb7.jar" />
+    </item>
+    <item
+        jar="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Vivek\xperp\lokaso\source\lokaso.android\app\build\intermediates\pre-dexed\debug\classes-5cfba9d8181ff4571dbe6dd78181797325f4f577.jar" />
     </item>
 
 </items>

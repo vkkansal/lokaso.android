@@ -12,7 +12,7 @@
     <string name="action_edit_profile_photo">Edit profile photo</string>
     <string name="action_edit_profile_cover">Edit cover photo</string>
     <string name="action_account_activate">Activate account</string>
-    <string name="action_login_with_facebook">Log in with Facebook</string>
+    <string name="action_login_with_facebook">Continue with Facebook</string>
     <string name="action_signup_with_facebook">Sign up with Facebook</string>
     <string name="action_regular_signup">Back to the regular registration form</string>
     <string name="action_profile">Profile</string>

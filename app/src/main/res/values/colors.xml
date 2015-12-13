@@ -15,7 +15,10 @@
     <color name="light_blue">#34B5E5</color>
     <color name="gray_border">#D3D3D3</color>
     <color name="content_page">#F2F2F2</color>
+    <color name="tab_selected_text">#00A0DC</color>
+    <color name="tab_unselected_text">#000000</color>
     <color name="gray_button_text_color">#288EC1</color>
+    <color name="gray_text_new">#ccc</color>
     <color name="colorPrimary">#0F4671</color>
     <color name="toolBar">#204062</color>
     <color name="question_list_divider">#d9d9d9</color>
@@ -23,6 +26,7 @@
     <color name="question_row_end_color">#ffffff</color>
     <color name="question_row_hover_start_color">#ebeef0</color>
     <color name="question_row_hover_end_color">#ebeef0</color>
+    <color name="red">#FFFF4444</color>
     <color name="drawer_divider">#262A2E</color>
     <color name="drawer_bg">#212429</color>
     <color name="drawer_item_bg">#212429</color>

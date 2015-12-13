@@ -6,7 +6,7 @@
     <ImageView
         android:id="@+id/select_upload_image"
         android:layout_width="fill_parent"
-        android:layout_height="180dp"
+        android:layout_height="250dp"
         android:scaleType="centerCrop"
         android:src="@drawable/upload_photo_default" />
 
@@ -17,16 +17,22 @@
         android:layout_below="@id/select_upload_image"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:hint="Name your upload" />
 
     <Button
         android:id="@+id/post_ask_submit"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_blue"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+
         android:text="UPLOAD" />
+
 
     <EditText
         android:id="@+id/post_ask_detail"
@@ -36,7 +42,7 @@
         android:layout_below="@id/post_ask_category"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="top"
         android:hint="Description"
         android:lines="5"

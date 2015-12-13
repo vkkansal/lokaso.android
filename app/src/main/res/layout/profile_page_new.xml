@@ -48,7 +48,6 @@
                     android:id="@+id/postTxt_tv"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="10"
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -75,10 +74,9 @@
                 android:padding="5dp">
 
                 <TextView
-                    android:id="@+id/followerstxt_tv"
+                    android:id="@+id/askTxt_tv"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="50"
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -107,7 +105,6 @@
                     android:id="@+id/followingTxt_tv"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="45"
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -136,24 +133,6 @@
             android:textColor="@color/white"
             android:textStyle="bold" />
     </RelativeLayout>
-    <!--<android.support.v4.view.ViewPager
-        android:id="@+id/profile_detail_contents_viewpager"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/profile_detail"
-        android:layout_weight="1" >
-
-        <android.support.v4.view.PagerTabStrip
-            android:id="@+id/profile_detail_pager_title_strip"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:background="@color/white"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-    </android.support.v4.view.ViewPager>-->
-
-
     <android.support.v4.view.ViewPager
         android:id="@+id/profile_detail_contents_viewpager"
         android:layout_width="fill_parent"
@@ -169,4 +148,26 @@
         android:layout_below="@+id/profile_detail"
         android:layout_weight="1"
         android:elevation="6dp" />
+    <ImageView
+        android:id="@+id/uplaod_pic_profile"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="uploadUserPic"
+        android:src="@drawable/create_new" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/profileLoadingScreen">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileLoadingScreenProgressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 </RelativeLayout>

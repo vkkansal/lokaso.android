@@ -12,7 +12,7 @@ android {
         exclude('META-INF/LICENSE')
     }
     defaultConfig {
-        applicationId "ua.com.qascript.android"
+        applicationId "ua.com.lokaso.android"
         minSdkVersion 14
         targetSdkVersion 22
         versionName '1.6'

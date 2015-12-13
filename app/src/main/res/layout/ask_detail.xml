@@ -4,12 +4,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+       <!--
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:id="@+id/imageButtonProfile"
+            android:background="@drawable/ic_profile"/>-->
+    </android.support.v7.widget.Toolbar>
+
     <RelativeLayout
         android:id="@+id/ask_user_detail"
         android:layout_width="fill_parent"
         android:layout_height="100dp"
         android:background="#fff"
         android:layout_margin="3dp"
+        android:layout_below="@+id/toolbar"
         android:padding="8dp">
 
         <ImageView

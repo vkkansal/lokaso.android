@@ -11,9 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
-        android:background="@drawable/rounded_corner"
         android:scaleType="fitXY"
-        android:src="@drawable/select_photo" />
+        android:src="@drawable/profile_default_photo" />
 
     <!--<CheckBox
         android:id="@+id/myCheckBox"

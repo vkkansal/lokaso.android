@@ -7,7 +7,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="ua.com.qascript.android.PhotoViewActivity"
+    tools:context="ua.com.lokaso.android.PhotoViewActivity"
     android:background="@color/black">
 
     <RelativeLayout

@@ -60,7 +60,7 @@
             android:key="settings_contact_us"
             android:title="@string/settings_contact_us"
 
-            android:summary="qascript@mail.ru" />
+            android:summary="lokaso@mail.ru" />
     </PreferenceCategory>
 
 </PreferenceScreen>

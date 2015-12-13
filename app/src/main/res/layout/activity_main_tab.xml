@@ -23,7 +23,7 @@
         android:layout_height="45dp"
         android:layout_gravity="end"
         android:id="@+id/imageButtonProfile"
-        android:background="@drawable/default_profile"/>
+        android:background="@drawable/ic_profile"/>
 </android.support.v7.widget.Toolbar>
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"
@@ -41,5 +41,16 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/tab_layout"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/profileLoadingScreen">
 
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileLoadingScreenProgressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 </RelativeLayout>

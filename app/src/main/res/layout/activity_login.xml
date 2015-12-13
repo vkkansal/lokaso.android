@@ -7,7 +7,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="ua.com.qascript.android.LoginActivity"
+    android:gravity="top"
+    tools:context="ua.com.lokaso.android.LoginActivity"
     android:background="@color/gray_bg" >
 
     <android.support.v7.widget.Toolbar
@@ -20,9 +21,22 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <com.facebook.login.widget.LoginButton
+        xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        fb:login_text="@string/action_login_with_facebook"
+        fb:logout_text="@string/action_login_with_facebook"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="20dp" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/scrollView">
 
         <LinearLayout
@@ -30,14 +44,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="16dp" >
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="OR LOGIN WITH EMAIL"
+                    android:layout_margin="20dp"
+                    android:gravity="center"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:hint="@string/placeholder_username"
                     android:ems="10"
-                    android:layout_marginTop="10dp"
                     android:maxLength="24"
                     android:id="@+id/signinUsername" />
 
@@ -48,34 +66,29 @@
                     android:hint="@string/placeholder_password"
                     android:ems="10"
                     android:id="@+id/signinPassword"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:maxLength="20"
                     android:layout_gravity="center_horizontal" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="38dp"
                     android:text="@string/lang_button_login"
                     android:id="@+id/signinBtn"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="30dp"
                     android:textColor="@color/white"
                     android:background="@drawable/button_blue"
                     android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/forgot_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FORGOT PASSWORD"
+                android:layout_margin="20dp"
+                android:gravity="center"/>
 
-                <com.facebook.login.widget.LoginButton
-                    xmlns:fb="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/login_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    fb:login_text="@string/action_login_with_facebook"
-                    fb:logout_text="@string/action_login_with_facebook"
-                    android:padding="10dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:layout_marginTop="20dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

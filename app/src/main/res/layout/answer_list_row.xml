@@ -81,7 +81,7 @@
             android:textColor="@color/black"
             android:textSize="16dp" />
 
-        <ua.com.qascript.android.view.ResizableImageView
+        <ua.com.lokaso.android.view.ResizableImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/answerImg"

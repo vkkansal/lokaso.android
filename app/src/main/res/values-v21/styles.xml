@@ -47,8 +47,8 @@
 
     <style name="RatingBarMedium" parent="@android:style/Widget.RatingBar">
         <item name="android:maxHeight">@dimen/rating_bar_medium_height</item>
-        <item name="android:indeterminateDrawable">@drawable/store_custom_ratingbar_big</item>
-        <item name="android:progressDrawable">@drawable/store_custom_ratingbar_big</item>
+        <!--<item name="android:indeterminateDrawable">@drawable/store_custom_ratingbar_big</item>
+        <item name="android:progressDrawable">@drawable/store_custom_ratingbar_big</item>-->
         <item name="android:minHeight">@dimen/rating_bar_medium_height</item>
         <item name="android:isIndicator">true</item>
     </style>
