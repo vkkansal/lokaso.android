@@ -46,12 +46,13 @@ public class DashboardActivityTab extends AppCompatActivity implements Constants
     PagerAdapterDashboard adapter;
     RelativeLayout mProfileLoadingScreen;
     GPSTracker gps;
+    TabLayout tabLayout;
     private List<UserFriends> streamListFollowing = new ArrayList<UserFriends>();
     private List<UserAsks> streamListAsks = new ArrayList<UserAsks>();
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-            checkLocation();
+            setContentView(R.layout.activity_main_tab);
 
         }
 
@@ -65,8 +66,8 @@ public class DashboardActivityTab extends AppCompatActivity implements Constants
             double longitude = gps.getLongitude();
 
             // \n is for new line
-            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
-            setContentView(R.layout.activity_main_tab);
+            //Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+
             App.getInstance().setLat(String.valueOf(latitude));
             App.getInstance().setLng(String.valueOf(longitude));
             init();
@@ -91,7 +92,8 @@ public class DashboardActivityTab extends AppCompatActivity implements Constants
             toolbar = (Toolbar) findViewById(R.id.toolbar);
             toolbar.setTitle("Around You");
             toolbar.setTitleTextColor(Color.WHITE);
-            TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+            tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+            tabLayout.removeAllTabs();
             tabLayout.addTab(tabLayout.newTab().setText("Folks"));
             tabLayout.addTab(tabLayout.newTab().setText("Asks"));
             tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
@@ -165,7 +167,7 @@ public class DashboardActivityTab extends AppCompatActivity implements Constants
 
                             arrayLength = 0;
                             if (response != null) {
-
+                                streamListFollowing.clear();
                                 JSONArray usersArray = response.getJSONArray("users");
 
                                 arrayLength = usersArray.length();
@@ -221,7 +223,7 @@ public class DashboardActivityTab extends AppCompatActivity implements Constants
 
                             arrayLength = 0;
                             if (response != null) {
-
+                                streamListAsks.clear();
                                 JSONArray usersArray = response.getJSONArray("users");
 
                                 arrayLength = usersArray.length();

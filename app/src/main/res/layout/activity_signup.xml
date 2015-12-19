@@ -99,11 +99,12 @@
                 android:inputType="textEmailAddress"
                 android:maxLength="40" />
 
-            <TextView
+            <EditText
                 android:id="@+id/signupLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
                 android:ems="10"
                 android:hint="Location"
                 android:maxLength="40" />

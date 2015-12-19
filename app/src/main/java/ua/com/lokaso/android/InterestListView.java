@@ -139,7 +139,7 @@ public class InterestListView extends AppCompatActivity implements Constants{
 
     public void setUserInterest() {
 
-        CustomRequest jsonReq = new CustomRequest(Request.Method.GET, METHOD_USERS_INTERESTS_SET, null,
+        CustomRequest jsonReq = new CustomRequest(Request.Method.POST, METHOD_USERS_INTERESTS_SET, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {

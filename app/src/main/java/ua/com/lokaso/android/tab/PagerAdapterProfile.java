@@ -3,6 +3,8 @@ package ua.com.lokaso.android.tab;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.util.Log;
 
 import java.util.List;
 
@@ -10,7 +12,7 @@ import ua.com.lokaso.android.model.UserAsks;
 import ua.com.lokaso.android.model.UserFriends;
 import ua.com.lokaso.android.model.UserPhotos;
 
-public class PagerAdapterProfile extends FragmentPagerAdapter {
+public class PagerAdapterProfile extends FragmentStatePagerAdapter {
     int mNumOfTabs;
     private List<UserPhotos> streamListUserPhotos;
     private List<UserFriends> streamListFollowing;
@@ -31,6 +33,7 @@ public class PagerAdapterProfile extends FragmentPagerAdapter {
                 PhotosProfile tab1 = PhotosProfile.newInstance(streamListUserPhotos);
                 return tab1;
             case 1:
+                Log.v("Profile userAsksModel", String.valueOf(streamListAsks.size()));
                 UserAskTabProfile tab2 = UserAskTabProfile.newInstance(streamListAsks);
                 return tab2;
             case 2:

@@ -123,7 +123,7 @@ public class UserFriendsListAdapter extends BaseAdapter implements Constants, Ta
 
             viewHolder.folksImage.setImageResource(R.drawable.profile_default_photo);
         }
-        if(true)//answer.getFollowingType())
+        if(answer.getIs_following().equalsIgnoreCase("0"))
         {
             viewHolder.folkFollowingType.setImageDrawable(activity.getResources().getDrawable(R.drawable.ic_follow));
 

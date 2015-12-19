@@ -49,7 +49,9 @@ public class ProfileActivityNew extends AppCompatActivity implements Constants{
     ImageView imageView;
     Button statusButton;
     RelativeLayout mProfileLoadingScreen;
+    ViewPager viewPager;
     ImageLoader imageLoader = App.getInstance().getImageLoader();
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,15 +82,14 @@ public class ProfileActivityNew extends AppCompatActivity implements Constants{
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Photos"));
         tabLayout.addTab(tabLayout.newTab().setText("Asks"));
         tabLayout.addTab(tabLayout.newTab().setText("Following"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         tabLayout.setTabTextColors(getResources().getColor(R.color.tab_unselected_text), getResources().getColor(R.color.tab_selected_text));
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.profile_detail_contents_viewpager);
-        adapter = new PagerAdapterProfile(getSupportFragmentManager(), tabLayout.getTabCount(), streamListUserPhotos, streamListFollowing, streamListAsks);
-        viewPager.setAdapter(adapter);
+        viewPager = (ViewPager) findViewById(R.id.profile_detail_contents_viewpager);
+
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -106,7 +107,7 @@ public class ProfileActivityNew extends AppCompatActivity implements Constants{
 
             }
         });
-        getData();
+
 
     }
     int arrayLength = 0;
@@ -172,7 +173,9 @@ public class ProfileActivityNew extends AppCompatActivity implements Constants{
                     public void onResponse(JSONObject response) {
 
                         try {
-
+                            streamListUserPhotos.clear();
+                            streamListAsks.clear();
+                            streamListFollowing.clear();
                             Log.v("response",response.toString());
                                 JSONObject usersArray = response.getJSONObject("user_data");
                                 profileName = usersArray.getString("name");
@@ -196,6 +199,7 @@ public class ProfileActivityNew extends AppCompatActivity implements Constants{
                                     for (int i = 0; i < userAsks.length(); i++) {
                                         UserAsks userAsksModel = new UserAsks(userAsks.getJSONObject(i));
                                         streamListAsks.add(userAsksModel);
+                                        Log.v("userAsksModel",String.valueOf(streamListAsks.size()));
                                     }
                                     JSONArray userFollowing = response.getJSONArray("user_following");
                                     for (int i = 0; i < userFollowing.length(); i++) {
@@ -211,7 +215,8 @@ public class ProfileActivityNew extends AppCompatActivity implements Constants{
                         } finally {
                             removeLoadingScreen();
                             Log.v("notify datachange","notify datachange");
-                            adapter.notifyDataSetChanged();
+                            adapter = new PagerAdapterProfile(getSupportFragmentManager(), tabLayout.getTabCount(), streamListUserPhotos, streamListFollowing, streamListAsks);
+                            viewPager.setAdapter(adapter);
                         }
                     }
                 }, new Response.ErrorListener() {
@@ -270,4 +275,9 @@ public class ProfileActivityNew extends AppCompatActivity implements Constants{
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getData();
+    }
 }

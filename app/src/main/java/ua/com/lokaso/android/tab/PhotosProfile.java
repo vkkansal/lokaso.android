@@ -18,6 +18,7 @@ public class PhotosProfile extends Fragment  implements Constants {
     private List<UserPhotos> streamList;
     UserPhotosListAdapter userFriendsListAdapter;
     private ListView saveListView;
+    static PhotosProfile myFragment;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -29,7 +30,9 @@ public class PhotosProfile extends Fragment  implements Constants {
     }
 
     public static PhotosProfile newInstance(List<UserPhotos> streamList) {
-        PhotosProfile myFragment = new PhotosProfile();
+        if(myFragment==null) {
+            myFragment = new PhotosProfile();
+        }
         myFragment.streamList = streamList;
         return myFragment;
     }

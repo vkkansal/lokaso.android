@@ -28,13 +28,6 @@ public class Locations extends Application implements Constants {
         this.name = name;
     }
 
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
 
     public String getLat() {
         return lat;
@@ -52,18 +45,9 @@ public class Locations extends Application implements Constants {
         this.lng = lng;
     }
 
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
 
     private String name;
-    private String state;
-
-    private String lat, lng, country;
+    private String lat, lng;
 
     public Locations() {
 
@@ -71,16 +55,16 @@ public class Locations extends Application implements Constants {
 
     public Locations(JSONObject jsonData) {
 
-        try {
+        /*try {
 
-            if (jsonData != null) {
+            *//*if (jsonData != null) {
                 this.setId(jsonData.getString("id"));
                 this.setName(jsonData.getString("name"));
                 this.setState(jsonData.getString("state"));
                 this.setLat(jsonData.getString("lat"));
                 this.setLng(jsonData.getString("lng"));
                 this.setCountry(jsonData.getString("country"));
-            }
+            }*//*
 
         } catch (Throwable t) {
 
@@ -88,8 +72,8 @@ public class Locations extends Application implements Constants {
 
         } finally {
 
-            Log.d("UserFriends", jsonData.toString());
-        }
+            //Log.d("UserFriends", jsonData.toString());
+        }*/
     }
 
 }

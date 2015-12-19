@@ -2,6 +2,7 @@ package ua.com.lokaso.android.tab;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,11 +26,13 @@ public class UserAskTabProfile extends Fragment  implements Constants {
     UserAsksListAdapter userFriendsListAdapter;
     private ListView saveListView;
     SearchView searchView;
+    static UserAskTabProfile myFragment;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.user_photos, container, false);
         saveListView = (ListView)rootView.findViewById(R.id.saveListView);
+        Log.v("streamList",String.valueOf(streamList.size()));
         userFriendsListAdapter = new UserAsksListAdapter(getActivity(), streamList, null, onClickListener);
         saveListView.setAdapter(userFriendsListAdapter);
 
@@ -44,7 +47,9 @@ public class UserAskTabProfile extends Fragment  implements Constants {
         }
     };
     public static UserAskTabProfile newInstance(List<UserAsks> streamList) {
-        UserAskTabProfile myFragment = new UserAskTabProfile();
+        if(myFragment==null) {
+            myFragment = new UserAskTabProfile();
+        }
         myFragment.streamList = streamList;
         return myFragment;
     }

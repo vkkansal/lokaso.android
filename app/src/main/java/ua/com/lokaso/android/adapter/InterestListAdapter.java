@@ -42,8 +42,9 @@ public class InterestListAdapter extends BaseAdapter implements Constants, TagCl
         this.responder = responder;
 
 
-		defaultOptions = new DisplayImageOptions.Builder().cacheOnDisk(true).cacheInMemory(false).imageScaleType(ImageScaleType.EXACTLY).resetViewBeforeLoading(true)
-				.displayer(new RoundedBitmapDisplayer(8))
+		defaultOptions = new DisplayImageOptions.Builder().cacheOnDisk(true).cacheInMemory(false).imageScaleType(ImageScaleType.EXACTLY)
+                .resetViewBeforeLoading(true)
+				/*.displayer(new RoundedBitmapDisplayer(8))*/
 				.build();// SimpleBitmapDisplayer()).build();
 
 

@@ -114,8 +114,8 @@ public class UserAsksListAdapter extends BaseAdapter implements Constants, TagCl
         if (answer.getUser_pic().length() != 0) {
 
             viewHolder.imageUser.setImageResource(R.drawable.profile_default_photo);
-            String baseUrl = "http://52.91.86.27/user_pics/";
-            imageLoader.get(baseUrl+answer.getUser_pic(), ImageLoader.getImageListener(viewHolder.imageUser, R.drawable.profile_default_photo, R.drawable.profile_default_photo));
+            //String baseUrl = "http://52.91.86.27/user_pics/";
+            imageLoader.get(answer.getUser_pic(), ImageLoader.getImageListener(viewHolder.imageUser, R.drawable.profile_default_photo, R.drawable.profile_default_photo));
 
         } else {
 

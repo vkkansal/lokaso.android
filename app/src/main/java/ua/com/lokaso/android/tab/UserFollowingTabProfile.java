@@ -26,6 +26,7 @@ public class UserFollowingTabProfile extends Fragment implements Constants {
     UserFriendsListAdapter userFriendsListAdapter;
     private ListView saveListView;
     SearchView searchView;
+    static UserFollowingTabProfile myFragment;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -43,7 +44,9 @@ public class UserFollowingTabProfile extends Fragment implements Constants {
         }
     };
     public static UserFollowingTabProfile newInstance(List<UserFriends> streamList) {
-        UserFollowingTabProfile myFragment = new UserFollowingTabProfile();
+        if(myFragment==null) {
+            myFragment = new UserFollowingTabProfile();
+        }
         myFragment.streamList = streamList;
         return myFragment;
     }

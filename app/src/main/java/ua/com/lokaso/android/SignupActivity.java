@@ -14,6 +14,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Base64;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,6 +48,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -76,7 +79,7 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
     EditText signupFullname, signupPassword, signupEmail;
     ImageView signupImage;
     //AutoCompleteTextView signupLocation;
-    TextView signupLocation;
+    EditText signupLocation;
     Button signupJoinHowBtn;
     TextView mRegularSignup, mLabelAuthorizationViaFacebook;
     private Spinner signupInterest;
@@ -86,7 +89,8 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
     private static List<String> locations = new ArrayList<String>();
     Map<String, String> requestParams = new HashMap<String, String>();
     private static Map<String, Locations> locationsMap = new HashMap<String, Locations>();
-
+    Bitmap bitmapImagePhoto;
+    ByteArrayOutputStream byteArrayOutputStream;
     ArrayAdapter<String> adapterLocations = null;
 
     @Override
@@ -108,7 +112,7 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
         signupEmail = (EditText) findViewById(R.id.signupEmail);
         signupImage = (ImageView) findViewById(R.id.load_profile_pic);
         //signupLocation = (AutoCompleteTextView) findViewById(R.id.signupLocation);
-        signupLocation = (TextView) findViewById(R.id.signupLocation);
+        signupLocation = (EditText) findViewById(R.id.signupLocation);
         signupLocation.setOnClickListener(onClickListener);
         /*adapterLocations = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, locations);
         signupLocation.setAdapter(adapterLocations);*/
@@ -281,7 +285,7 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
                                 }
                                 params.put("email", email);
                                 params.put("facebook_id", facebookId);
-                                params.put("profile_pic_data", "");
+                                params.put("profile_pic_data", convertBitmapImageToString(bitmapImagePhoto));
                                 Log.v("request params", String.valueOf(params.size()));
                                 return params;
                             }
@@ -449,9 +453,15 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
                 case Constants.LOCATION_SELECTION:
                     if (resultCode == RESULT_OK) {
                         Place place = PlacePicker.getPlace(data, this);
-                        String toastMsg = String.format("Place: %s", place.getName());
+                        signupLocation.setText(place.getName());
+                        Locations locationsBean = new Locations(null);
+                        locationsBean.setLat(String.valueOf(place.getLatLng().latitude));
+                        locationsBean.setLng(String.valueOf(place.getLatLng().longitude));
+                        locationsBean.setName(String.valueOf(place.getName()));
+                        locationsMap.put(String.valueOf(place.getName()), locationsBean);
+                        /*String toastMsg = String.format("Place: %s", place.getName());
                         Toast.makeText(this, toastMsg, Toast.LENGTH_LONG).show();
-                        Log.e(this.getClass().getName(), "Location [" + toastMsg + "]");
+                        Log.e(this.getClass().getName(), "Location [" + toastMsg + "]");*/
                     }
                     break;
                 default:
@@ -739,12 +749,12 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
         signupLocation.setError(null);
         Helper helper = new Helper();
 
-        if (location.length() == 0) {
+        /*if (location.length() == 0) {
 
             signupLocation.setError(getString(R.string.error_field_empty));
 
             return false;
-        }
+        }*/
 
         if (fullname.length() == 0) {
 
@@ -851,7 +861,8 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
             Bundle b = intent.getExtras();
             int w = signupImage.getWidth();
             int h = signupImage.getHeight();
-            signupImage.setImageBitmap((Bitmap) b.get("image"));
+            bitmapImagePhoto = (Bitmap) b.get("image");
+            signupImage.setImageBitmap(bitmapImagePhoto);
             signupImage.setLayoutParams(new LinearLayout.LayoutParams(w, h));
             //bundle.putAll(b); // Might be erroneous;
 
@@ -970,4 +981,34 @@ public class SignupActivity extends ActivityBase implements Constants, View.OnFo
             }
         }
     };
+
+    private String convertBitmapImageToString(Bitmap bitmap){
+        if(bitmap != null) {
+            byteArrayOutputStream = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+            byte[] byteArray = byteArrayOutputStream.toByteArray();
+            return Base64.encodeToString(byteArray, Base64.DEFAULT);
+        }else{
+            return "";
+        }
+    }
+
+    private void cleanImageData(){
+        if(byteArrayOutputStream!=null) {
+            try {
+                byteArrayOutputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        if(bitmapImagePhoto!=null) {
+            bitmapImagePhoto = null;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        cleanImageData();
+    }
 }

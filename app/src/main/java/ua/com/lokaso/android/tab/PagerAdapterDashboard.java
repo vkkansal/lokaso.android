@@ -3,13 +3,14 @@ package ua.com.lokaso.android.tab;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.List;
 
 import ua.com.lokaso.android.model.UserAsks;
 import ua.com.lokaso.android.model.UserFriends;
 
-public class PagerAdapterDashboard extends FragmentPagerAdapter {
+public class PagerAdapterDashboard extends FragmentStatePagerAdapter{
     int mNumOfTabs;
     private List<UserFriends> streamListFollowing;
     private List<UserAsks> streamListAsks;

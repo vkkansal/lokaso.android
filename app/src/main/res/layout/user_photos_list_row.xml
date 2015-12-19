@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/profile_photo"
+        android:scaleType="centerCrop"
         android:src="@drawable/profile_default_photo" />
 
     <TextView

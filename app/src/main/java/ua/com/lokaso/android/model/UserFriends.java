@@ -10,7 +10,19 @@ import ua.com.lokaso.android.constants.Constants;
 
 public class UserFriends extends Application implements Constants {
 
-    private String user_id, name, email;
+    private String user_id;
+    private String name;
+    private String email;
+
+    public String getIs_following() {
+        return is_following;
+    }
+
+    public void setIs_following(String is_following) {
+        this.is_following = is_following;
+    }
+
+    private String is_following;
 
     public String[] getInterests() {
         return interests;
@@ -43,6 +55,7 @@ public class UserFriends extends Application implements Constants {
                 this.setUser_pic(jsonData.getString("user_pic"));
                 this.setNum_asks(jsonData.getString("num_asks"));
                 this.setNum_responses(jsonData.getString("num_responses"));
+                this.setIs_following(jsonData.getString("is_following"));
                 this.setDistance(jsonData.getString("distance"));//jsonData.getString("distance"));
                 /*if(jsonData.getString("interests").contains(",")){
                     interestArray = jsonData.getString("interests").split(",");

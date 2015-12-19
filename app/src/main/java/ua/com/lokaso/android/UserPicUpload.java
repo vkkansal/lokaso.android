@@ -12,6 +12,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.LocalBroadcastManager;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -30,6 +31,8 @@ import com.android.volley.VolleyError;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -46,13 +49,16 @@ import ua.com.lokaso.android.util.Helper;
  */
 public class UserPicUpload extends ActivityBase {
     ImageView selectedImage;
-    EditText postAskTitle;
+    EditText postAskTitle, post_ask_detail;
     Button uploadPicNow;
+    Bitmap bitmapImagePhoto;
+    ByteArrayOutputStream byteArrayOutputStream;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upload_pic);
         postAskTitle = (EditText) findViewById(R.id.post_ask_category);
+        post_ask_detail = (EditText) findViewById(R.id.post_ask_detail);
         uploadPicNow = (Button) findViewById(R.id.post_ask_submit);
         uploadPicNow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,13 +67,16 @@ public class UserPicUpload extends ActivityBase {
                 if(title.isEmpty()){
                     Helper.showAlertResponse(UserPicUpload.this,"Please assign any title.",false,true);
                 }else{
-                    //CustomRequest cr = new CustomRequest();
-                    uploadDetails();
-
+                   if(App.getInstance().isConnected()) {
+                       uploadDetails();
+                   }else{
+                       Helper.showAlertResponse(UserPicUpload.this,"Please check your Internet connection.",false,true);
+                   }
                 }
 
             }
         });
+
         selectedImage = (ImageView)findViewById(R.id.select_upload_image);
         selectedImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,100 +115,38 @@ public class UserPicUpload extends ActivityBase {
         });
         LocalBroadcastManager.getInstance(UserPicUpload.this).registerReceiver(mUpdateImageReceiver, new IntentFilter(Constants.IMAGE_RECEIVED));
     }
-    public Map<String, String> getRequestParametersMap() {
-        Map<String, String> params = new HashMap<String, String>();
-        params.put("name",postAskTitle.getText().toString() );
-       // params.put("pass", password);
-        /*Locations locationsBean = locationsMap.get(location);
-        String lat = "NA";
-        String log = "NA";
-        if (locationsBean != null) {
-            lat = locationsBean.getLat();
-            log = locationsBean.getLng();
-        }
-        params.put("lat", lat);
-        params.put("lng", log);
-        if (facebookId != null && !facebookId.equalsIgnoreCase("")) {
-            params.put("provider", "facebook");
-        } else {
-            params.put("provider", "email");
-        }
-        params.put("email", email);
-        params.put("facebook_id", facebookId);
-        params.put("profile_pic_data", "");
-        Log.v("request params", String.valueOf(params.size()));*/
-        return params;
-    }
+
     public void uploadDetails(){
         showpDialog();
-        CustomRequest jsonReq = new CustomRequest(Request.Method.POST, METHOD_AUTH_SIGNUP_LOCAL, getRequestParametersMap(),
+        CustomRequest jsonReq = new CustomRequest(Request.Method.POST, METHOD_USERS_PIC_UPLOAD, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-
-                        Log.e("Profile", "Malformed JSON: \"" + response.toString() + "\"");
-
-                        if (App.getInstance().authorize(response)) {
-
-                            Log.e("Profile", "Malformed JSON: \"" + response.toString() + "\"");
-
-                            ActivityCompat.finishAffinity(UserPicUpload.this);
-
-                            Intent i = new Intent(getApplicationContext(), InterestListView.class);
-                            startActivity(i);
-
-                        } else {
-                            String errorStr = "Error";
-                            try {
-                                errorStr = response.getString("error");
-                            } catch (JSONException e) {
-
-                            }
-
-                            /*switch (App.getInstance().getErrorCode()) {
-
-                                case NAME_ERROR: {
-
-                                    signupFullname.setError(errorStr);
-                                    break;
-                                }
-
-                                case EMAIL_ERROR: {
-
-                                    signupEmail.setError(errorStr);
-                                    break;
-                                }
-                                case PASSWORD_ERROR: {
-
-                                    signupPassword.setError(errorStr);
-                                    break;
-                                }
-                                case LOCATION_ERROR: {
-
-                                    signupLocation.setError(errorStr);
-                                    break;
-                                }
-
-                                default: {
-
-                                    Log.e("Profile", "Could not parse malformed JSON: \"" + response.toString() + "\"");
-                                    break;
-                                }
-                            }*/
-                        }
-
                         hidepDialog();
+                        //ActivityCompat.finishAffinity(UserPicUpload.this);
+                        UserPicUpload.this.finish();
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
-
-                hidepDialog();
             }
-        });
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("user_id",String.valueOf(App.getInstance().getId()));
+                params.put("title",postAskTitle.getText().toString());
+                params.put("description",post_ask_detail.getText().toString());
+                params.put("file_data",convertBitmapImageToString(bitmapImagePhoto));
+                return params;
+            }
+        };
+
+        App.getInstance().addToRequestQueue(jsonReq);
     }
+
     private BroadcastReceiver mUpdateImageReceiver = new BroadcastReceiver() {
 
         @Override
@@ -208,7 +155,8 @@ public class UserPicUpload extends ActivityBase {
             Bundle b = intent.getExtras();
             int w = selectedImage.getWidth();
             int h = selectedImage.getHeight();
-            selectedImage.setImageBitmap((Bitmap) b.get("image"));
+            bitmapImagePhoto = (Bitmap) b.get("image");
+            selectedImage.setImageBitmap(bitmapImagePhoto);
             selectedImage.setLayoutParams(new RelativeLayout.LayoutParams(w, h));
             //bundle.putAll(b); // Might be erroneous;
 
@@ -325,5 +273,33 @@ public class UserPicUpload extends ActivityBase {
 
     }
 
+    private String convertBitmapImageToString(Bitmap bitmap){
+        if(bitmap != null) {
+            byteArrayOutputStream = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+            byte[] byteArray = byteArrayOutputStream.toByteArray();
+            return Base64.encodeToString(byteArray, Base64.DEFAULT);
+        }else{
+            return "";
+        }
+    }
 
+    private void cleanImageData(){
+        if(byteArrayOutputStream!=null) {
+            try {
+                byteArrayOutputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        if(bitmapImagePhoto!=null) {
+            bitmapImagePhoto = null;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        cleanImageData();
+    }
 }

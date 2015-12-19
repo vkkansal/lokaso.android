@@ -64,6 +64,7 @@ public interface Constants {
     public static final String METHOD_USERS_LOCATIONS_GET = API_DOMAIN_LOCAL + "locations";
     public static final String METHOD_USERS_INTERESTS_GET = API_DOMAIN_LOCAL + "interests";
     public static final String METHOD_USERS_INTERESTS_SET = API_DOMAIN_LOCAL + "interests";
+    public static final String METHOD_USERS_PIC_UPLOAD = API_DOMAIN_LOCAL + "action/upload";
     public static final String METHOD_USERS_LOCATION_SET = API_DOMAIN_LOCAL + "users/updatelocation";
     public static final String METHOD_FEED_GET = API_DOMAIN + "api/" + API_VERSION + "/method/feed.get";
     public static final String METHOD_WALL_GET = API_DOMAIN + "api/" + API_VERSION + "/method/wall.get";
